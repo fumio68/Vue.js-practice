@@ -7,7 +7,8 @@ new Vue({
   },
   methods: {
     sayHi: function() {
-      return 'Hi';
+      // インスタンスのプロパティにアクセスするにはthisをつける
+      return this.message;
     }
   }
 })
