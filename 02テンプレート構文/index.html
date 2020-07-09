@@ -15,6 +15,10 @@
     <p>{{ ok ? 'YES' : 'NO' }}</p>
     <!-- 関数の戻り値も表示できる -->
     <p>{{ sayHi() }}</p>
+
+    <!-- ディレクティブ(Vue専用の属性みたいなもん) -->
+    <!-- v-textはプロパティのテキストを表示する（波かっこと効果は一緒） -->
+    <a href="#" v-text="message"></a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
