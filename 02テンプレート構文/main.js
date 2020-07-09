@@ -8,7 +8,10 @@ new Vue({
   methods: {
     sayHi: function() {
       // インスタンスのプロパティにアクセスするにはthisをつける
-      return this.message;
+      // return this.message;
+
+      // messageを上書き可能
+      this.message = 'Hello Vue.js'
     }
   }
 })
