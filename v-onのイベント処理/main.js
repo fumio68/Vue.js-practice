@@ -6,12 +6,13 @@ new Vue({
     y:0,
   },
   methods: {
-    countUp: function() {
-      this.number += 1
+    countUp: function(times) {
+      this.number += 1 * times
     },
-    changeMousePosition: function(event) {
-      this.x = event.clientX;
-      this.y = event.clientY;
+    // eventを引数に渡すと、eventの中身を取得することができる
+    changeMousePosition: function(divideNumber, event) {
+      this.x = event.clientX / divideNumber;
+      this.y = event.clientY / divideNumber;
     },
   }
 })
