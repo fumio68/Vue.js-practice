@@ -20,6 +20,9 @@
     <!-- ディレクティブ(Vue専用の属性みたいなもん) -->
     <!-- v-textはプロパティのテキストを表示する（波かっこと効果は一緒） -->
     <a href="#" v-text="message"></a>
+
+    <!-- v-htmlはHTMLのタグを反映させることができる(信頼のあるコンテンツのみに使用) -->
+    <div v-html="html"></div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

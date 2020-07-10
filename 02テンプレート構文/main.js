@@ -3,7 +3,8 @@ new Vue({
   data: {
     message: 'Hello World!',
     number: 3,
-    ok: true
+    ok: true,
+    html: '<h1>h1です</h1>'
   },
   methods: {
     sayHi: function() {
