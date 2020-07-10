@@ -9,8 +9,10 @@
   <div id="app">
     <p>現在{{ number }}回クリックされています</p>
       <!-- 処理関数はmethodsにまとめる -->
-    <button v-on:click="countUp(2)">カウントアップ</button><br>
-    <button v-on:[event]="countUp(2)">カウントアップ</button>
+    <button v-on:click="countUp(2)">カウントアップ2</button><br>
+    <button v-on:[event]="countUp(3)">カウントアップ3</button><br>
+      <!-- v-onは@で省略できる -->
+    <button @click="countUp(4)">カウントアップ4</button><br>
 
       <!-- イベントを使うときには$eventという特別な引数を使う -->
     <p v-on:mousemove="changeMousePosition(10, $event)">マウスを乗せてください
