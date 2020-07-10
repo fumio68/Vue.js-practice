@@ -4,6 +4,7 @@ new Vue({
     number: 0,
     x:0,
     y:0,
+    event: 'click',
   },
   methods: {
     countUp: function(times) {
