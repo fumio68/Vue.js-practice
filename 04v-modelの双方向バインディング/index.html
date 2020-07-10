@@ -10,6 +10,11 @@
     <!-- v-modelを使うと、dataのプロパティの値をリアルタイムで変えることができる。 -->
     <input type="text" v-model="message">
     <h1>{{message}}</h1>
+
+
+    <p>{{counter}}</p>
+    <button @click="counter += 1">+1</button>
+    <p>{{ lessThanThree }}</p>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
