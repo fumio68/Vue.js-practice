@@ -11,6 +11,7 @@ new Vue({
     },
     // eventを引数に渡すと、eventの中身を取得することができる
     changeMousePosition: function(divideNumber, event) {
+
       this.x = event.clientX / divideNumber;
       this.y = event.clientY / divideNumber;
     },
