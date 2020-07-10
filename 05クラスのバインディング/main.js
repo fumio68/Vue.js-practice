@@ -9,6 +9,9 @@ new Vue({
     styleObject: {
       color: 'yellow',
       'background-color': 'green',
+    },
+    baseStyles: {
+      fontSize: '60px'
     }
   },
   computed: {
