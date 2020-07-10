@@ -4,7 +4,8 @@ new Vue({
     message: 'Hello World!',
     number: 3,
     ok: true,
-    html: '<h1>h1です</h1>'
+    html: '<h1>h1です</h1>',
+    url: 'http://google.com'
   },
   methods: {
     sayHi: function() {
