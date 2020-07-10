@@ -11,7 +11,13 @@ new Vue({
       return this.counter > 3 ? '3より上' : '3以下'
     }
   },
-  methods: {
-
+  // computedなどで実現できない非同期処理などはwatchプロパティを使う
+  watch: {
+    counter: function() {
+      const vm = this;
+      setTimeout(function() {
+        vm.counter = 0
+      }, 3000)
+    }
   },
 })
