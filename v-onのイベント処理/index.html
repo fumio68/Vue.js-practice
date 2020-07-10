@@ -8,16 +8,20 @@
 <body>
   <div id="app">
     <p>現在{{ number }}回クリックされています</p>
-    <!-- 処理関数はmethodsにまとめる -->
+      <!-- 処理関数はmethodsにまとめる -->
     <button v-on:click="countUp(2)">カウントアップ</button>
 
-    <!-- イベントを使うときには$eventという特別な引数を使う -->
+      <!-- イベントを使うときには$eventという特別な引数を使う -->
     <p v-on:mousemove="changeMousePosition(10, $event)">マウスを乗せてください
       <!-- stopはstopPropagationの代用（反応しないようにする） -->
     <span v-on:mousemove.stop>反応しないでください</span></p>
       <!-- preventはpreventDefaultの代用（初期設定の処理をしないようにする） -->
     <a v-on:click.prevent href="http://google.com">Google</a>
     <p>X:{{x}}、Y:{{y}}</p>
+
+      key修飾子（キーボードイベントを特定のキーのみに対応させる enter,space）
+    <input type="text" v-on:keyup.enter="myAlert">
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
