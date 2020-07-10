@@ -5,7 +5,12 @@ new Vue({
     number: 3,
     ok: true,
     html: '<h1>h1です</h1>',
-    url: 'http://google.com'
+    url: 'http://google.com',
+    attribute: 'href',
+    twitterObject: {
+      href: 'https://twitter.com',
+      id: 31
+    }
   },
   methods: {
     sayHi: function() {
