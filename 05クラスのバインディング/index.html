@@ -9,9 +9,12 @@
 <body>
   <div id="app">
     <h1 :class="classObject">Hello</h1>
+    <!-- 真偽値でクラス指定 -->
     <button @click="isActive = !isActive">切り替え</button>
-
+    <!-- 配列+dataでクラス指定 -->
     <h1 :class="[color, bg]">Hello</h1>
+
+    <h1 :style="styleObject">Hello</h1>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
